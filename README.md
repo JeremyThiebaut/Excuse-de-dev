@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Application React - Ma super application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Cette application est une simple application React qui utilise React Router, Axios et Sass.
 
-## Available Scripts
+## Prérequis
 
-In the project directory, you can run:
+Pour exécuter cette application, vous devez avoir Node.js et npm installés sur votre ordinateur.
 
-### `npm start`
+## Installation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clonez le dépôt Git sur votre ordinateur.
+2. Accédez au dossier racine de l'application dans votre terminal.
+3. Exécutez la commande suivante pour installer les dépendances :
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+npm install
+```
 
-### `npm test`
+## Utilisation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Dans votre terminal, accédez au dossier racine de l'application.
+2. Exécutez la commande suivante pour lancer l'application :
 
-### `npm run build`
+```bash
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Ouvrez votre navigateur Web et accédez à l'URL suivante :
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+http://localhost:3000/
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Fonctionnalités
 
-### `npm run eject`
+### Page d'accueil
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+La page d'accueil est la page principale de l'application. Elle affiche un bouton qui, une fois cliqué, génère un message aléatoire. Le message est récupéré à partir d'une API externe.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Pages d'erreur
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+L'application dispose d'une page pour les erreurs 404. Cette page affiche un message d'erreur approprié et une image.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Page perdue
 
-## Learn More
+La page perdue est une page personnalisée qui s'affiche lorsqu'un utilisateur accède à une page qui n'existe pas. Elle redirige automatiquement l'utilisateur vers la page d'accueil après cinq secondes.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Structure du code
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Le code de l'application est organisé en plusieurs fichiers :
 
-### Code Splitting
+- **index.js** : le point d'entrée de l'application.
+- **components/app/index.js** : le composant racine de l'application.
+- **components/button/index.js** : le composant du bouton qui génère des messages aléatoires.
+- **components/app/style.scss** : les styles pour le composant racine de l'application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Conclusion
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+C'est tout ! Vous pouvez maintenant utiliser l'application et l'adapter à vos besoins. N'hésitez pas à explorer le code pour voir comment tout fonctionne ensemble.
